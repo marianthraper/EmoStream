@@ -7,5 +7,5 @@ The project uses a combination of Kafka, Spark and Flask
 3. From the spark aggregator a pub-sub architecture is set up to receive the scaled down message. There are two clusters that have their own cluster publishers. Each cluster has two subscribers.
 4. Each subscriber can have a maximum of two clients connected to it. The subscribers send the aggregated message via a flask enpoint. Each subscriber is connected to a different port. The client has to connect to the respective port based on availability.
 
-**To simulate the real world application we have each client posting 100 emojis a second**
+**To simulate the real world application we have each client posting 100 emojis a second**\
 **Make sure to set up all other files before running the client file**
